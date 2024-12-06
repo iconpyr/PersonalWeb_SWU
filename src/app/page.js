@@ -1,26 +1,37 @@
 import React from "react";
-import Box from "./components/box";
 import Navbar from "./components/nav";
+import MyWork from "./components/mywork";
+import Activities from "./components/activity";
+import Footer from "./components/footer";
 
 export default function Page() {
   return (
-    <div>
+    <div className="font-mono">
       <Navbar />
       <Banner />
       <AboutMe />
       <MyWork />
-      
+      <Activities />
+      <Footer />
     </div>
   );
 }
 
 const Banner = () => {
   return (
-    <section className="mt-20 relative max-md:!pt-5 bg-[url('/images/trump.jpg')] h-screen bg-cover">
-      <div className="text-8xl text-white justify-start items-center mx-7 mt-5 uppercase w-full inline-flex flex-nowrap">
-        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
-          piyorod pasaganon - bodindecha sing singhaseni
-        </ul>
+    <section className="grid grid-cols-1 relative max-md:!pt-5 bg-[url('/images/me_1.jpg')] h-screen bg-cover bg-center bg-no-repeat overflow-hidden">
+      <div className="absolute w-full h-full">
+        <div className="flex items-end h-full animate-scroll pb-10">
+          <ul className="flex whitespace-nowrap text-6xl text-black uppercase mx-7 sm:text-7xl xl:text-9xl">
+            <li className="mr-14">Piyorod Pasaganon - portfolio</li>
+            <li className="mr-14">Piyorod Pasaganon - portfolio</li>
+            <li className="mr-14">Piyorod Pasaganon - portfolio</li>
+            <li className="mr-14">Piyorod Pasaganon - portfolio</li>
+            <li className="mr-14">Piyorod Pasaganon - portfolio</li>
+            <li className="mr-14">Piyorod Pasaganon - portfolio</li>
+            {/* Repeat as needed */}
+          </ul>
+        </div>
       </div>
     </section>
   );
@@ -28,47 +39,28 @@ const Banner = () => {
 
 const AboutMe = () => {
   return (
-    <section className="max-w-6xl mx-auto">
+    <section className="h-screen py-20 px-20 mx-auto bg-black bg-[url('/images/abmebg1.jpg')] bg-cover bg-center" id="aboutme">
       {/* <div className="text-4xl flex justify-center items-center pt-4 ">
         ABOUT ME
       </div> */}
-      <div className=" grid grid-cols-1 md:grid-cols-2 border-2 border-red-500">
-        <div className="py-14 md:py-24 pl-8 md:pl-14 pr-2 md:pr-8 border-2 border-red-500">
-          <div className="text-xl md:text-2xl">About Me</div>
-          <div className="text-5xl md:text-7xl font-bold">Lorem ipsum dolor</div>
-          <div className="text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nulla provident eum laboriosam nam suscipit praesentium, aliquam numquam at nobis voluptate vitae nisi autem.</div>
-        </div>
-        <div className="h-[256px] md:h-auto bg-[url('/images/trump.jpg')] bg-cover bg-center border-2 border-blue-500">
-          
-          
-        </div>
-      </div>
-    </section>
-  );
-};
-
-const MyWork = () => {
-  return (
-    <section className="h-screen bg-slate-600">
-        <div className="text-white text-4xl flex justify-center items-center pt-10">
-          MY WORK
-        </div>
-        <div className="container  mx-10">
-          <div className="flex flex-col md:flex-col-reverse xl:grid xl:grid-cols-4 gap-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-6 max-md:order-2">
-              <Box
-                image="/images/mac_bg.jpg"
-                name="JOBS' CHAT"
-                discription="AI STEVE JOBS"
-              />
-              <Box
-                image="/images/mac_bg.jpg"
-                name="Slash ramen"
-                discription="ramen ticket machine"
-              />
-            </div>
+      <div className="h-full grid grid-cols-1 md:grid-cols-2 py-12 bg-white/5 backdrop-blur-xl shadow-xl rounded-xl border-2 border-white/5">
+        <div className="py-14 md:py-24 pl-8 md:pl-14 pr-8 md:pr-8 text-black ">
+          <div className="text-lg md:text-2xl uppercase">About Me</div>
+          <div className="text-4xl md:text-7xl font-bold text-wrap">
+            PIYOROD PASAGANON
+          </div>
+          <div className="text-lg md:text-xl text-wrap">
+            Hello, I'm Icon from Bodindecha Sing Singhaseni school. This is my first ever personal website
           </div>
         </div>
-      </section>
+
+        {/* <div className="h-[256px] md:h-auto bg-[url('/images/iconport2.png')] bg-cover bg-center border-2 border-red-500"> */}
+        <div className="h-[720px] w-auto aspect-1/1  flex justify-center object-scale-down">
+          <img src="/images/iconport2.png" style={{ height: "100%" }} alt="" />
+        </div>
+
+        {/* </div> */}
+      </div>
+    </section>
   );
 };

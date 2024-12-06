@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 const Navbar = () => {
     return (
       <>
@@ -19,8 +19,9 @@ const Navbar = () => {
           hidden xl:flex h-full w-full gap-36 3xl:gap-12 px-10"
             >
               <li className="">
-                <a
-                  href=""
+                <Link 
+                  scroll={true}
+                  href="#aboutme"
                   className=" relative overflow-hidden cursor-pointer flex 
               items-center justify-center gap-1 
               hover:bg-black hover:text-white px-2 
@@ -29,11 +30,11 @@ const Navbar = () => {
               duration-300 w-full"
                 >
                   about me
-                </a>
+                </Link>
               </li>
               <li className="">
                 <a
-                  href=""
+                  href="#MyWork"
                   className=" relative overflow-hidden cursor-pointer flex 
               items-center justify-center gap-1 
               hover:bg-black hover:text-white px-2 
@@ -46,7 +47,7 @@ const Navbar = () => {
               </li>
               <li className="">
                 <a
-                  href=""
+                  href="#activity"
                   className=" relative overflow-hidden cursor-pointer flex 
               items-center justify-center gap-1 
               hover:bg-black hover:text-white px-2 
@@ -54,12 +55,12 @@ const Navbar = () => {
               2xl:text-base 3xl:text-xl font-semibold 
               duration-300 w-full"
                 >
-                  dream
+                  Activities
                 </a>
               </li>
               <li className="">
                 <a
-                  href=""
+                  href="#contact"
                   className=" relative overflow-hidden cursor-pointer flex 
               items-center justify-center gap-1 
               hover:bg-black hover:text-white px-2 
@@ -68,19 +69,6 @@ const Navbar = () => {
               duration-300 w-full"
                 >
                   contact
-                </a>
-              </li>
-              <li className="">
-                <a
-                  href=""
-                  className=" relative overflow-hidden cursor-pointer flex 
-              items-center justify-center gap-1 
-              hover:bg-black hover:text-white px-2 
-              py-1 rounded-lg uppercase text-sm 
-              2xl:text-base 3xl:text-xl font-semibold 
-              duration-300 w-full"
-                >
-                  donate
                 </a>
               </li>
             </ul>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Box = ({ image, name, discription }) => (
     <div
-      className="uppercase flex flex-col border-black rounded-lg bg-white 
+      className="hover:bg-pink-100 duration-300 uppercase flex flex-col border-black rounded-lg bg-white 
     divide-y-2 divide-black overflow-hidden text-black h-96 w-96 border-2"
     >
       <div className="flex flex-col justify-center gap-1.5 p-3 ">
@@ -10,15 +10,16 @@ const Box = ({ image, name, discription }) => (
         <span className="text-sm font-bold 3xl:text-base">{discription}</span>
       </div>
   
-      <div className="p-3 h-full ">
+      <div className="p-3 h-full flex flex-col">
         <div
           className="aspect-16/9 realtive w-full h-full rounded-md overflow-hidden bg-cover"
           style={{ backgroundImage: `url(${image})` }}
         ></div>
+        <span className="">hi</span>
       </div>
   
-      <div className="group hover:bg-gray-300 duration-150 relative flex items-center justify-between gap-2 px-3 py-1.5">
-        <span className="text-lg font-medium tracking-wider">JUMP TO</span>
+      <div className="group hover:bg-pink-200 duration-150 relative flex items-center justify-between gap-2 px-3 py-1.5">
+        <span className="text-lg font-medium tracking-wider"></span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="37.708"
