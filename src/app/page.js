@@ -8,7 +8,6 @@ import SmoothScroll from "./components/smoothscroll";
 export default function Page() {
   return (
     <div className="font-mono">
-      <SmoothScroll />
       <Navbar />
       <Banner />
       <AboutMe />
