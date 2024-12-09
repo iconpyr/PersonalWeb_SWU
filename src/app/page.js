@@ -56,7 +56,7 @@ const AboutMe = () => {
               PIYOROD PASAGANON
             </div>
             <div className="text-lg md:text-xl6 text-wrap">
-              Hello, I'm Icon from Bodindecha Sing Singhaseni school. This is my
+              Hello, I&apos;m Icon from Bodindecha Sing Singhaseni school. This is my
               first ever personal website
             </div>
           </div>
