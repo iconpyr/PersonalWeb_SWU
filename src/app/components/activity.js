@@ -2,14 +2,14 @@ import React from "react";
 
 const Activities = () => {
   return (
-    <section className="h-full py-20 px-20 mx-auto bg-black bg-[url('/images/abmebg1.jpg')] bg-cover bg-center font-proxima-nova" id="activity">
+    <section className="h-full py-20 md:px-20 px-7 mx-auto bg-black bg-[url('/images/abmebg1.jpg')] bg-cover bg-center font-proxima-nova" id="activity">
       <div className="max-w-7xl mx-auto">
         <div className="text-black md:text-8xl justify-center items-center pt-10 pb-6 flex font-bold uppercase mb-8 text-5xl">
           activities
         </div>
 
-        <div className="grid grid-cols-2 items-center text-black ">
-          <div className="bg-white/5 backdrop-blur-xl shadow-xl rounded-xl border-2 border-white/5 mr-4 h-full">
+        <div className="grid md:grid-cols-2 grid-cols-1 items-center text-black gap-4">
+          <div className="bg-white/5 backdrop-blur-xl shadow-xl rounded-xl border-2 border-white/5 h-full">
             <img
               src="/images/42bkk.png"
               alt=""
@@ -33,15 +33,15 @@ const Activities = () => {
         </div>
 
         <div className="grid grid-cols-3 gap-4 pt-4">
-          <div className="h-80 bg-red-300 rounded-xl bg-[url('/images/mepiscine.jpg')] bg-cover bg-center"></div>
-          <div className="h-80 bg-red-300 rounded-xl bg-[url('/images/shirtpiscine.jpg')] bg-cover bg-center"></div>
-          <div className="h-80 bg-red-300 rounded-xl bg-[url('/images/workingpiscine.jpg')] bg-cover bg-center"></div>
+          <div className="md:h-80 h-40 bg-red-300 rounded-xl bg-[url('/images/mepiscine.jpg')] bg-cover bg-center"></div>
+          <div className="md:h-80 h-40 bg-red-300 rounded-xl bg-[url('/images/shirtpiscine.jpg')] bg-cover bg-center"></div>
+          <div className="md:h-80 h-40 bg-red-300 rounded-xl bg-[url('/images/workingpiscine.jpg')] bg-cover bg-center"></div>
         </div>
 
-        <div className="grid grid-cols-2 items-center text-black pt-8">
+        <div className="grid md:grid-cols-2 grid-cols-1 items-center text-black pt-8 gap-4">
           <div className="h-96 bg-red-300 bg-[url('/images/drum3.jpg')] bg-cover bg-center rounded-xl"></div>
-          <div className="h-full bg-white/5 backdrop-blur-xl shadow-xl rounded-xl border-2 border-white/5 py-8 ml-4">
-            <div className="pl-8 text-4xl text-black font-bold uppercase pb-5 ml-4">
+          <div className="h-full bg-white/5 backdrop-blur-xl shadow-xl rounded-xl border-2 border-white/5 py-4 ">
+            <div className="pl-8 text-4xl text-black font-bold uppercase pb-5 ">
               Drumming
             </div>
             <div className="text-wrap text-xl px-8 ml-4">
@@ -58,9 +58,9 @@ const Activities = () => {
           <div className="h-80 bg-red-300 rounded-xl bg-[url('/images/drum1.jpg')] bg-cover bg-center"></div>
         </div>
 
-        <div className="grid grid-cols-2 items-start text-black pt-8">
-          <div className="h-full bg-white/5 backdrop-blur-xl shadow-xl rounded-xl border-2 border-white/5 py-8 mr-4">
-            <div className="pl-8 text-4xl text-black font-bold uppercase pb-5 ml-4">
+        <div className="grid md:grid-cols-2 grid-cols-1 items-start text-black pt-8 gap-4">
+          <div className="h-full bg-white/5 backdrop-blur-xl shadow-xl rounded-xl border-2 border-white/5 py-8 ">
+            <div className="pl-8 text-4xl text-black font-bold uppercase pb-5 ">
               drip coffee
             </div>
             <div className="text-wrap text-2xl px-8 ml-4">
