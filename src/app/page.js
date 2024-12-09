@@ -42,22 +42,27 @@ const Banner = () => {
 const AboutMe = () => {
   return (
     <div id="aboutme">
-      <section
-        className="h-screen py-20 px-20 mx-auto bg-black bg-[url('/images/abmebg1.jpg')] bg-cover bg-center"
-        
-      >
+      <section className="h-screen py-12 px-6 md:py-20 md:px-20 mx-auto bg-black bg-[url('/images/abmebg1.jpg')] bg-cover bg-center">
         {/* <div className="text-4xl flex justify-center items-center pt-4 ">
         ABOUT ME
         </div> */}
-        <div className="h-full grid grid-cols-1 md:grid-cols-2 py-12 bg-white/5 backdrop-blur-xl shadow-xl rounded-xl border-2 border-white/5">
-          <div className="py-14 md:py-24 pl-8 md:pl-14 pr-8 md:pr-8 text-black ">
+        <div className="h-full grid grid-cols-1 md:grid-cols-2 py-12 bg-white/5 backdrop-blur-xl shadow-xl rounded-xl border-2 border-white/5 overflow-hidden">
+          <div className="py-7 md:py-24 pl-8 md:pl-14 pr-8 md:pr-8 text-black ">
             <div className="text-lg md:text-2xl uppercase">About Me</div>
             <div className="text-4xl md:text-7xl font-bold text-wrap">
               PIYOROD PASAGANON
             </div>
-            <div className="text-lg md:text-xl6 text-wrap">
-              Hello, I&apos;m Icon from Bodindecha Sing Singhaseni school. This is my
-              first ever personal website
+            <div className="md:text-2xl font-bold text-xl pt-4">Hello!</div>
+            <div className="text-md md:text-xl text-wrap">
+              I&apos;m Icon from Bodindecha Sing Singhaseni school. This is my
+              first ever personal website.
+            </div>
+            <div className="text-md md:text-xl text-wrap pt-4 pb-12">
+              I&apos;m passionate about design and programming, always eager to
+              explore creative ways to bring ideas to life through technology.
+              Whether it&apos;s crafting visually stunning designs or writing clean,
+              functional code, I&apos;m driven by a love for innovation and
+              self-expression.
             </div>
           </div>
 
